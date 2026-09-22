@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Myntra white badge with iconic multicolor M ribbon and Myntra text matching image 5 -->
+  <rect x="2" y="2" width="96" height="96" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <g transform="translate(18, 16)">
+    <!-- Myntra 'M' shape overlapping ribbons -->
+    <!-- Left loop -->
+    <path d="M7 38C1.5 28 2.5 13 10 7C17.5 1 27 6 27 18C27 28 20 38 7 38Z" fill="#FF3E6C" opacity="0.95"/>
+    <!-- Right loop -->
+    <path d="M57 38C62.5 28 61.5 13 54 7C46.5 1 37 6 37 18C37 28 44 38 57 38Z" fill="#FF2A7A" opacity="0.95"/>
+    <!-- Center Left loop (overlapping orange/yellow) -->
+    <path d="M19 38C15 28 17 15 25 9C33 3 41 10 41 20C41 29 33 38 19 38Z" fill="#FFA000" style="mix-blend-mode: multiply;"/>
+    <!-- Center Right loop -->
+    <path d="M45 38C49 28 47 15 39 9C31 3 23 10 23 20C23 29 31 38 45 38Z" fill="#FF6D00" style="mix-blend-mode: multiply;"/>
+  </g>
+  <!-- "Myntra" text in clean dark typography -->
+  <text x="50" y="76" fill="#111111" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="14" text-anchor="middle" letter-spacing="-0.3">Myntra</text>
+</svg>

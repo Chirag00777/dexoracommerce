@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Meesho purple rounded square with orange 'm' and white 'meesho' text matching image 3 -->
+  <rect x="5" y="5" width="90" height="90" rx="26" fill="#52004F"/>
+  <!-- Orange 'm' logo mark -->
+  <path d="M30 52V30C30 25.5 33.6 22 38.1 22C42.6 22 46.2 25.5 46.2 30V48C46.2 49 47.1 50 48.1 50C49.1 50 50 49 50 48V30C50 25.5 53.6 22 58.1 22C62.6 22 66.2 25.5 66.2 30V52C66.2 56.5 62.6 60.1 58.1 60.1C53.6 60.1 50 56.5 50 52V40C50 39 49.1 38 48.1 38C47.1 38 46.2 39 46.2 40V52C46.2 56.5 42.6 60.1 38.1 60.1C33.6 60.1 30 56.5 30 52Z" fill="#F48220"/>
+  <!-- "meesho" text in white -->
+  <text x="50" y="79" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="15" text-anchor="middle" letter-spacing="-0.5">meesho</text>
+</svg>

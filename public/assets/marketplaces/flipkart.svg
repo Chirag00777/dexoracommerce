@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Flipkart Yellow Bag with handle and Blue 'f' speed logo matching image 2 -->
+  <rect x="8" y="16" width="84" height="76" rx="8" fill="#FFDF00"/>
+  <!-- Top 3D rim highlight -->
+  <path d="M8 22L18 10H82L92 22H8Z" fill="#F4C700"/>
+  <!-- Bag White Handle -->
+  <path d="M33 26C33 39 67 39 67 26" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round"/>
+  <!-- Flipkart Blue 'f' with speed lines -->
+  <g fill="#2874F0">
+    <path d="M22 66H42V71H22V66Z" />
+    <path d="M26 73H38V77H26V73Z" />
+    <path d="M19 78H33V82H19V78Z" />
+    <path d="M38 68C48 68 53 66 54 58H45C44 61 41 62 37 62V48H52V42H37V36C37 32 40 30 45 30H53V23H43C33 23 29 28 29 36V42H22V48H29V68H38Z" transform="translate(8, 2)"/>
+  </g>
+</svg>

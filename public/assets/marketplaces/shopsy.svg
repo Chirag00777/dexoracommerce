@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Shopsy bright blue-purple background with white shopping bag and 'shopsy' text matching image 4 -->
+  <rect width="100" height="100" rx="20" fill="#2E24D4"/>
+  <!-- Bag Handle -->
+  <path d="M41 18C41 12.5 45 8.5 50 8.5C55 8.5 59 12.5 59 18" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <!-- White Shopping Bag -->
+  <path d="M34 20L31 58H69L66 20H34Z" fill="#FFFFFF" rx="4"/>
+  <!-- Blue 'S' inside bag -->
+  <path d="M54.5 30C54.5 27.5 52.5 25.5 50 25.5C47.5 25.5 45.5 27.5 45.5 30C45.5 34 54.5 35 54.5 41C54.5 44.5 52 47 49 47C45.5 47 43.5 44 43.5 41.5H47C47 43 48 44 49.5 44C51 44 52 43 52 41.5C52 38 43 37 43 31C43 27 46 24 50 24C54 24 57 27 57 30H54.5Z" fill="#2E24D4" font-weight="900"/>
+  <!-- "shopsy" text in white -->
+  <text x="50" y="81" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="20" text-anchor="middle" letter-spacing="-0.5">shopsy</text>
+</svg>

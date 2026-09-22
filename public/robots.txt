@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow build or node internals
+Disallow: /node_modules/
+Disallow: /*.json$
+
+# Sitemaps
+Sitemap: sitemap.xml
