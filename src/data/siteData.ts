@@ -547,6 +547,11 @@ export const CASE_STUDIES: CaseStudyItem[] = [
 
 export const FAQS: FaqItem[] = [
   {
+    question: 'Who founded Dexora Commerce and what is their background?',
+    answer: 'Dexora Commerce was founded by Disha Singh, an e-commerce marketplace veteran and former Operations & Account Manager at Flipkart. Having managed high-volume seller portals from inside Flipkart, Disha brings insider knowledge of marketplace ranking algorithms, seller SLAs, brand ungating, and dispute resolution.',
+    category: 'general',
+  },
+  {
     question: 'What marketplaces does Dexora Commerce manage?',
     answer: 'Dexora Commerce specializes in the top Indian and global e-commerce platforms: Amazon, Flipkart, Myntra, Meesho, and Shopsy, as well as Quick Commerce platforms (Blinkit/Zepto) and international export portals (Amazon USA, eBay, Etsy).',
     category: 'general',
@@ -577,3 +582,68 @@ export const FAQS: FaqItem[] = [
     category: 'general',
   },
 ];
+
+export const FOUNDER_INFO = {
+  name: 'Disha Singh',
+  role: 'Founder & Managing Director',
+  previousRole: 'Ex-Flipkart Operations & Account Manager',
+  experienceYears: '6+ Years Experience',
+  managedPortals: '150+ Seller Portals Handled',
+  gmvManaged: '₹25Cr+ Marketplace GMV Scaled',
+  bio: 'Disha Singh is an e-commerce strategist, operational leader, and former Flipkart Manager who has dedicated her career to scaling marketplace sellers across India. Having worked inside Flipkart managing seller operations, high-volume catalogs, and compliance standards, she founded Dexora Commerce to provide manufacturers, D2C brands, and traders with direct access to enterprise-grade marketplace management.',
+  quote: 'Most sellers fail on marketplaces not because their product lacks quality, but because they are navigating platform algorithms without an insider roadmap. At Dexora Commerce, we operate your seller accounts with the exact operational precision, compliance standards, and algorithmic understanding used inside the marketplace giants.',
+  specialties: [
+    'Flipkart & Amazon Search Algorithm Optimization',
+    'High-Velocity Seller Portal Operations & Daily SLA Monitoring',
+    'Cataloging, A+ EBC Content & Keyword Architecture',
+    'Account Health Recovery (ODR, VTR, Cancellation Rates)',
+    'Safe-T & Damaged Returns Claim Recovery Workflows',
+    'Marketplace Advertising (Amazon PPC, Flipkart PLA/PCA)',
+  ],
+  milestones: [
+    {
+      metric: 'Ex-Flipkart',
+      label: 'Leadership Pedigree',
+      detail: 'Managed high-volume seller operations, tier upgrades, and compliance directly within Flipkart.',
+    },
+    {
+      metric: '150+',
+      label: 'Seller Portals Scaled',
+      detail: 'Pan-India accounts across fashion, electronics, home decor, beauty, and industrial goods.',
+    },
+    {
+      metric: '₹25Cr+',
+      label: 'Marketplace GMV',
+      detail: 'Cumulative gross merchandise value delivered for partner brands and sellers.',
+    },
+    {
+      metric: '99.4%',
+      label: 'SLA Adherence Rate',
+      detail: 'Consistently maintaining Gold/Silver tier ratings with near-zero late dispatch penalties.',
+    },
+  ],
+};
+
+export const ABOUT_VALUES = [
+  {
+    title: 'Marketplace Insider Knowledge',
+    description: 'We do not guess platform policies. Our operational frameworks are built on real, internal marketplace management experience.',
+    icon: 'ShieldCheck',
+  },
+  {
+    title: 'Zero Hidden Commission Cuts',
+    description: 'Unlike agencies that demand 5-15% of your revenue, Dexora operates on transparent, flat monthly packages. You keep 100% of your earnings.',
+    icon: 'TrendingUp',
+  },
+  {
+    title: 'Daily Hands-On Execution',
+    description: 'Every morning our team audits pending dispatches, inventory thresholds, PPC bids, and return claims. No dormant accounts.',
+    icon: 'Clock',
+  },
+  {
+    title: 'Safe & Secure Child Access',
+    description: 'We never ask for your primary passwords or banking OTPs. We operate strictly through authorized marketplace child accounts.',
+    icon: 'Lock',
+  },
+];
+

@@ -44,33 +44,33 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Tagline Pill */}
-        <div className="flex justify-center sm:justify-start mb-6">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm text-amber-200 font-semibold shadow-sm">
+        <div className="flex justify-center sm:justify-start mb-5 sm:mb-6">
+          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 backdrop-blur-md px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm text-amber-200 font-semibold shadow-xs flex-wrap justify-center sm:justify-start text-center">
             <span className="flex h-2 w-2 rounded-full bg-amber-400 animate-ping" />
-            <span className="text-white font-bold">DEXORA COMMERCE</span>
+            <span className="text-white font-bold tracking-wide">DEXORA COMMERCE</span>
             <span className="text-amber-500">•</span>
             <span className="text-amber-300">Empowering Sellers. Growing Businesses.</span>
           </div>
         </div>
 
         {/* Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Core Value Proposition */}
-          <div className="lg:col-span-7 text-center sm:text-left space-y-6">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-[1.12] text-white">
+          <div className="lg:col-span-7 text-center sm:text-left space-y-5 sm:space-y-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-[1.15] text-white">
               End-to-End E-Commerce Account Management & Handling on{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-200">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-200 block sm:inline mt-1 sm:mt-0">
                 Amazon, Flipkart, Myntra & Meesho
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto sm:mx-0">
               Dexora Commerce is India&apos;s premier e-commerce handling agency. We manage daily marketplace operations, cataloging & SEO listings, dispatch & returns support, account health, and high-ROAS PPC advertising so your brand dominates search rankings.
             </p>
 
             {/* 4 Pillars Quick Highlights with 3D Depth */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1 text-sm text-slate-200 text-left">
               <ThreeDTiltCard maxTilt={10} depth={15}>
                 <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 transition-colors h-full">
                   <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
@@ -113,13 +113,13 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* CTAs */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center gap-3.5">
+            <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
               <button
                 id="hero-audit-cta"
                 onClick={onOpenAuditModal}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:from-amber-300 hover:to-amber-200 shadow-lg shadow-amber-500/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-xs sm:text-sm md:text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 hover:from-amber-300 hover:to-amber-200 shadow-lg shadow-amber-500/25 transition-all hover:scale-[1.02] active:scale-[0.98] min-h-[46px]"
               >
-                <Sparkles className="w-5 h-5 text-slate-950" />
+                <Sparkles className="w-4 h-4 text-slate-950" />
                 <span>Get Free Account Audit</span>
                 <ArrowRight className="w-4 h-4 text-slate-950" />
               </button>
@@ -127,16 +127,16 @@ export const Hero: React.FC<HeroProps> = ({
               <button
                 id="hero-services-cta"
                 onClick={onScrollToServices}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 backdrop-blur-sm transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-xs sm:text-sm md:text-base font-semibold text-white bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700 backdrop-blur-sm transition-all min-h-[46px]"
               >
-                <Layers className="w-5 h-5 text-amber-400" />
+                <Layers className="w-4 h-4 text-amber-400" />
                 <span>Explore 4 Pillars</span>
               </button>
 
               <button
                 id="hero-tools-cta"
                 onClick={onScrollToTools}
-                className="w-full sm:w-auto text-xs sm:text-sm font-semibold text-slate-300 hover:text-amber-300 px-3 py-2 transition-colors text-center flex items-center justify-center gap-1.5"
+                className="w-full sm:w-auto text-xs sm:text-sm font-semibold text-slate-300 hover:text-amber-300 px-3.5 py-3 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/60 transition-colors text-center flex items-center justify-center gap-1.5 min-h-[46px]"
               >
                 <Wrench className="w-4 h-4 text-amber-400" />
                 <span>Free Label Cropper & Tools →</span>
@@ -306,32 +306,32 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
 
                 {/* Aggregated Performance Counters */}
-                <div className="grid grid-cols-3 gap-2 mb-3.5 text-center">
-                  <div className="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800">
-                    <div className="text-lg sm:text-xl font-display font-extrabold text-amber-300">500+</div>
-                    <div className="text-[10px] text-slate-400 font-medium">Sellers Grown</div>
+                <div className="grid grid-cols-3 gap-1.5 sm:gap-2 mb-3.5 text-center">
+                  <div className="bg-slate-950/70 p-2 sm:p-2.5 rounded-xl border border-slate-800">
+                    <div className="text-base sm:text-xl font-display font-extrabold text-amber-300">500+</div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium">Sellers Grown</div>
                   </div>
 
-                  <div className="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800">
-                    <div className="text-lg sm:text-xl font-display font-extrabold text-emerald-400">99.6%</div>
-                    <div className="text-[10px] text-slate-400 font-medium">Account Health</div>
+                  <div className="bg-slate-950/70 p-2 sm:p-2.5 rounded-xl border border-slate-800">
+                    <div className="text-base sm:text-xl font-display font-extrabold text-emerald-400">99.6%</div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium">Account Health</div>
                   </div>
 
-                  <div className="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800">
-                    <div className="text-lg sm:text-xl font-display font-extrabold text-white">₹30 Cr+</div>
-                    <div className="text-[10px] text-slate-400 font-medium">GMV Generated</div>
+                  <div className="bg-slate-950/70 p-2 sm:p-2.5 rounded-xl border border-slate-800">
+                    <div className="text-base sm:text-xl font-display font-extrabold text-white">₹30 Cr+</div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium">GMV Generated</div>
                   </div>
                 </div>
 
                 {/* Direct Seller Desk WhatsApp helpline */}
-                <div className="flex items-center justify-between gap-3 p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl">
-                  <div className="flex items-center gap-2.5">
+                <div className="flex items-center justify-between gap-2.5 sm:gap-3 p-2.5 sm:p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl">
+                  <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
                     <div className="w-8 h-8 rounded-lg bg-amber-400 text-slate-950 flex items-center justify-center font-bold shrink-0">
                       <Headphones className="w-4 h-4" />
                     </div>
-                    <div>
-                      <div className="text-xs font-bold text-white">Direct Seller Desk</div>
-                      <div className="text-[11px] text-amber-300 font-semibold">{COMPANY_INFO.phoneDisplay}</div>
+                    <div className="truncate">
+                      <div className="text-xs font-bold text-white truncate">Direct Seller Desk</div>
+                      <div className="text-[11px] text-amber-300 font-semibold truncate">{COMPANY_INFO.phoneDisplay}</div>
                     </div>
                   </div>
 
@@ -340,7 +340,7 @@ export const Hero: React.FC<HeroProps> = ({
                     href={COMPANY_INFO.whatsappUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs font-bold px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 rounded-lg transition-colors whitespace-nowrap"
+                    className="text-xs font-bold px-3 py-1.5 sm:px-3.5 sm:py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 rounded-lg transition-colors whitespace-nowrap shrink-0"
                   >
                     Chat Now
                   </a>
@@ -356,24 +356,26 @@ export const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* 5 Core Marketplaces Bar */}
-      <div className="mt-14 pt-8 border-t border-slate-800/80">
+      <div className="mt-12 sm:mt-14 pt-8 border-t border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 text-center">
           <p className="text-xs font-bold uppercase tracking-wider text-amber-400/90">
             Official E-Commerce Seller Management Ecosystem
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-            {CORE_MARKETPLACES.map((m) => (
+        <div className="max-w-5xl mx-auto px-3 sm:px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3">
+            {CORE_MARKETPLACES.map((m, idx) => (
               <div
                 key={m.id}
-                className="flex flex-col items-center justify-center p-3 rounded-xl bg-slate-900/80 hover:bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all text-center group"
+                className={`flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-xl bg-slate-900/80 hover:bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all text-center group ${
+                  idx === 4 ? 'col-span-2 sm:col-span-1' : ''
+                }`}
               >
-                <div className="w-10 h-10 rounded-xl bg-white/10 p-1 flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white/10 p-1 flex items-center justify-center mb-1 group-hover:scale-105 transition-transform">
                   <MarketplaceLogo id={m.id} size="sm" />
                 </div>
-                <span className="text-sm font-extrabold text-white group-hover:text-amber-300 transition-colors">{m.name}</span>
+                <span className="text-xs sm:text-sm font-extrabold text-white group-hover:text-amber-300 transition-colors">{m.name}</span>
                 <span className="text-[10px] font-medium text-slate-400 mt-0.5">{m.tag}</span>
               </div>
             ))}

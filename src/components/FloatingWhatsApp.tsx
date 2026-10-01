@@ -4,13 +4,13 @@ import { COMPANY_INFO } from '../data/siteData';
 
 export const FloatingWhatsApp: React.FC = () => {
   return (
-    <aside aria-label="WhatsApp quick chat" className="fixed bottom-6 right-6 z-40">
+    <aside aria-label="WhatsApp quick chat" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40">
       <a
         id="floating-whatsapp-btn"
         href={COMPANY_INFO.whatsappUrl}
         target="_blank"
         rel="noreferrer"
-        className="flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all group"
+        className="flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white p-3 sm:px-4 sm:py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all group min-w-[48px] min-h-[48px] justify-center"
         aria-label="Chat on WhatsApp with Dexora Commerce"
       >
         <div className="relative">

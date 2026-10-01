@@ -39,7 +39,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesProps> = ({ onOpenAuditModa
             <div
               key={study.id}
               id={study.id}
-              className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+              className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-8 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between"
             >
               <div>
                 {/* Meta header */}
@@ -58,23 +58,23 @@ export const CaseStudiesSection: React.FC<CaseStudiesProps> = ({ onOpenAuditModa
                   </span>
                 </div>
 
-                <h3 className="font-display font-bold text-lg sm:text-xl text-slate-900 mb-4">
+                <h3 className="font-display font-bold text-base sm:text-xl text-slate-900 mb-4 leading-snug">
                   {study.title}
                 </h3>
 
                 {/* Growth Metric Box */}
-                <div className="grid grid-cols-3 gap-3 bg-slate-50 rounded-xl p-4 border border-slate-200/80 mb-5">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 bg-slate-50 rounded-xl p-3 sm:p-4 border border-slate-200/80 mb-5 text-center sm:text-left">
                   <div>
-                    <span className="text-[11px] text-slate-500 block">Starting GMV</span>
-                    <span className="text-base font-bold text-slate-700">{study.beforeGmv}</span>
+                    <span className="text-[10px] sm:text-[11px] text-slate-500 block truncate">Starting GMV</span>
+                    <span className="text-xs sm:text-base font-bold text-slate-700 block truncate">{study.beforeGmv}</span>
                   </div>
                   <div>
-                    <span className="text-[11px] text-slate-500 block">Current GMV</span>
-                    <span className="text-base font-extrabold text-indigo-600">{study.afterGmv}</span>
+                    <span className="text-[10px] sm:text-[11px] text-slate-500 block truncate">Current GMV</span>
+                    <span className="text-xs sm:text-base font-extrabold text-indigo-600 block truncate">{study.afterGmv}</span>
                   </div>
                   <div>
-                    <span className="text-[11px] text-emerald-700 block font-semibold">Multiple</span>
-                    <span className="text-base font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 inline-block">
+                    <span className="text-[10px] sm:text-[11px] text-emerald-700 block font-semibold truncate">Multiple</span>
+                    <span className="text-xs sm:text-base font-extrabold text-emerald-600 bg-emerald-50 px-1.5 sm:px-2 py-0.5 rounded border border-emerald-200 inline-block">
                       {study.growthMultiple}
                     </span>
                   </div>

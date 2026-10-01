@@ -385,19 +385,19 @@ export const ToolsSuite: React.FC = () => {
         </div>
 
         {/* Tools Navigation Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row lg:justify-center gap-2 mb-6 sm:mb-8">
           <button
             id="tab-cropper"
             onClick={() => setActiveTab('cropper')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold transition-all ${
+            className={`flex items-center justify-center sm:justify-start lg:justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all min-h-[44px] ${
               activeTab === 'cropper'
-                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20 scale-[1.02]'
+                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
                 : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
             }`}
           >
-            <Scissors className="w-4 h-4" />
-            <span>Thermal 4x6 Label Cropper</span>
-            <span className="bg-amber-400 text-slate-950 text-[10px] font-extrabold px-1.5 py-0.5 rounded">
+            <Scissors className="w-4 h-4 shrink-0" />
+            <span className="truncate">Thermal 4x6 Label Cropper</span>
+            <span className="bg-amber-400 text-slate-950 text-[10px] font-extrabold px-1.5 py-0.5 rounded shrink-0">
               Popular
             </span>
           </button>
@@ -405,40 +405,40 @@ export const ToolsSuite: React.FC = () => {
           <button
             id="tab-calculator"
             onClick={() => setActiveTab('calculator')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold transition-all ${
+            className={`flex items-center justify-center sm:justify-start lg:justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all min-h-[44px] ${
               activeTab === 'calculator'
-                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20 scale-[1.02]'
+                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
                 : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
             }`}
           >
-            <Calculator className="w-4 h-4" />
-            <span>Marketplace Profit & ROI Calculator</span>
+            <Calculator className="w-4 h-4 shrink-0" />
+            <span className="truncate">Marketplace Profit & ROI Calculator</span>
           </button>
 
           <button
             id="tab-sku-counter"
             onClick={() => setActiveTab('skuCounter')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold transition-all ${
+            className={`flex items-center justify-center sm:justify-start lg:justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all min-h-[44px] ${
               activeTab === 'skuCounter'
-                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20 scale-[1.02]'
+                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
                 : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
             }`}
           >
-            <ListOrdered className="w-4 h-4" />
-            <span>Order SKU Counter & Pick-List</span>
+            <ListOrdered className="w-4 h-4 shrink-0" />
+            <span className="truncate">Order SKU Counter & Pick-List</span>
           </button>
 
           <button
             id="tab-fees"
             onClick={() => setActiveTab('fees')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold transition-all ${
+            className={`flex items-center justify-center sm:justify-start lg:justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all min-h-[44px] ${
               activeTab === 'fees'
-                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20 scale-[1.02]'
+                ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
                 : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
             }`}
           >
-            <Percent className="w-4 h-4" />
-            <span>Fee & Commission Cheat Sheet</span>
+            <Percent className="w-4 h-4 shrink-0" />
+            <span className="truncate">Fee & Commission Cheat Sheet</span>
           </button>
         </div>
 
@@ -743,15 +743,15 @@ export const ToolsSuite: React.FC = () => {
               </div>
 
               {/* Marketplace Selector Buttons */}
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-slate-500 mr-1">Platform:</span>
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                <span className="text-xs font-bold text-slate-500 mr-1 w-full sm:w-auto">Platform:</span>
                 {(['flipkart', 'amazon', 'meesho', 'shopsy'] as const).map((m) => (
                   <button
                     key={m}
                     onClick={() => handleMarketplaceChange(m)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold uppercase transition-all ${
+                    className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold uppercase transition-all min-h-[36px] ${
                       calcMarketplace === m
-                        ? 'bg-indigo-600 text-white shadow-sm'
+                        ? 'bg-indigo-600 text-white shadow-xs'
                         : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                     }`}
                   >

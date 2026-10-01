@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ToolsSuite } from './components/ToolsSuite';
 import { ServicesSection } from './components/ServicesSection';
+import { AboutSection } from './components/AboutSection';
 import { PricingSection } from './components/PricingSection';
 import { CaseStudiesSection } from './components/CaseStudiesSection';
 import { GrowthAuditSection } from './components/GrowthAuditSection';
@@ -41,6 +42,7 @@ export default function App() {
     const mapping: Record<string, string> = {
       tools: 'free-tools-section',
       services: 'services-section',
+      about: 'about-section',
       pricing: 'pricing-section',
       casestudies: 'casestudies-section',
       faq: 'faq-section',
@@ -53,6 +55,18 @@ export default function App() {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        handleNavigate(hash);
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-amber-500 selection:text-slate-950">
@@ -75,6 +89,11 @@ export default function App() {
         <ToolsSuite />
 
         <ServicesSection 
+          onOpenAuditModal={handleOpenAuditModal}
+        />
+
+        {/* About Us & Leadership: Disha Singh (Ex-Flipkart Manager) */}
+        <AboutSection 
           onOpenAuditModal={handleOpenAuditModal}
         />
 

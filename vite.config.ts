@@ -3,13 +3,24 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+const getBase = () => {
+  if (process.env.BASE_PATH) {
+    return process.env.BASE_PATH.endsWith('/') ? process.env.BASE_PATH : `${process.env.BASE_PATH}/`;
+  }
+  if (process.env.GITHUB_REPOSITORY) {
+    const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
+    return `/${repo}/`;
+  }
+  return './';
+};
+
 export default defineConfig(() => {
   return {
-    base: './',
+    base: getBase(),
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname || '.'),
       },
     },
     server: {

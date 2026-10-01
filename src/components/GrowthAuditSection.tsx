@@ -153,9 +153,9 @@ export const GrowthAuditSection: React.FC = () => {
 
           {/* Right Column: Free Audit Request Form with Direct WhatsApp Redirect */}
           <div className="lg:col-span-7">
-            <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-9 shadow-2xl border border-slate-800 relative overflow-hidden">
+            <div className="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-9 shadow-2xl border border-slate-800 relative overflow-hidden">
               
-              <div className="mb-6">
+              <div className="mb-5 sm:mb-6">
                 <div className="inline-flex items-center gap-1.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
                   <MessageSquare className="w-3.5 h-3.5 fill-emerald-400" />
                   <span>Instant WhatsApp Connect</span>

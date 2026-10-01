@@ -42,11 +42,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenAuditModal
           </p>
 
           {/* Billing Cycle Toggle */}
-          <div className="mt-7 inline-flex items-center bg-slate-800/90 border border-slate-700 p-1 rounded-xl">
+          <div className="mt-6 sm:mt-7 inline-flex items-center bg-slate-800/90 border border-slate-700 p-1 rounded-xl max-w-full">
             <button
               id="billing-toggle-monthly"
               onClick={() => setBillingCycle('monthly')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-[11px] sm:text-xs font-bold transition-all min-h-[38px] ${
                 billingCycle === 'monthly'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
@@ -57,13 +57,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenAuditModal
             <button
               id="billing-toggle-quarterly"
               onClick={() => setBillingCycle('quarterly')}
-              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-[11px] sm:text-xs font-bold transition-all flex items-center gap-1.5 min-h-[38px] ${
                 billingCycle === 'quarterly'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              <span>Quarterly (3 Months)</span>
+              <span>Quarterly</span>
               <span className="bg-emerald-400 text-slate-950 text-[10px] font-extrabold px-1.5 py-0.5 rounded">
                 Save 15%
               </span>
@@ -94,7 +94,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenAuditModal
                     isGold
                       ? 'bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-900 border-2 border-amber-400 shadow-2xl shadow-indigo-500/20'
                       : 'bg-slate-800/80 hover:bg-slate-800 border border-slate-700 shadow-lg'
-                  } p-6 sm:p-7`}
+                  } p-5 sm:p-7`}
                 >
                 {/* Top Badge */}
                 {pkg.badge && (

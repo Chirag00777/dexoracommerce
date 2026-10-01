@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dexora Commerce – E-Commerce Account Management</title>
+    <script type="text/javascript">
+      // GitHub Pages Single Page App redirect handler
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      var repoSegment = l.pathname.split('/')[1] || '';
+      // If accessed without trailing slash on repo root:
+      if (l.pathname === '/' + repoSegment) {
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' + repoSegment + '/' + l.search + l.hash);
+      } else {
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to Dexora Commerce...</p>
+  </body>
+</html>
